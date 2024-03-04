@@ -20,7 +20,7 @@ import java.util.Arrays;
 import java.util.stream.Stream;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-class Validation7CharPageTests extends BaseTest {
+class Validation7CharPageTest extends BaseTest {
 
 	private WebDriver driver;
 	private Validation7CharPage validation7CharPage;

@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.test.wootitude_test.impl.Validation7CharPageTest" time="5.984" tests="37" errors="0" skipped="0" failures="7">
+  <properties>
+    <property name="java.specification.version" value="18"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/timtitarenko/IdeaProjects/Wootitude-Test/target/test-classes:/Users/timtitarenko/IdeaProjects/Wootitude-Test/target/classes:/Users/timtitarenko/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.0-M1/spring-boot-starter-3.3.0-M1.jar:/Users/timtitarenko/.m2/repository/org/springframework/boot/spring-boot/3.3.0-M1/spring-boot-3.3.0-M1.jar:/Users/timtitarenko/.m2/repository/org/springframework/spring-context/6.1.3/spring-context-6.1.3.jar:/Users/timtitarenko/.m2/repository/org/springframework/spring-aop/6.1.3/spring-aop-6.1.3.jar:/Users/timtitarenko/.m2/repository/org/springframework/spring-beans/6.1.3/spring-beans-6.1.3.jar:/Users/timtitarenko/.m2/repository/org/springframework/spring-expression/6.1.3/spring-expression-6.1.3.jar:/Users/timtitarenko/.m2/repository/io/micrometer/micrometer-observation/1.12.2/micrometer-observation-1.12.2.jar:/Users/timtitarenko/.m2/repository/io/micrometer/micrometer-commons/1.12.2/micrometer-commons-1.12.2.jar:/Users/timtitarenko/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.0-M1/spring-boot-autoconfigure-3.3.0-M1.jar:/Users/timtitarenko/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.0-M1/spring-boot-starter-logging-3.3.0-M1.jar:/Users/timtitarenko/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar:/Users/timtitarenko/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar:/Users/timtitarenko/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.22.1/log4j-to-slf4j-2.22.1.jar:/Users/timtitarenko/.m2/repository/org/slf4j/jul-to-slf4j/2.0.11/jul-to-slf4j-2.0.11.jar:/Users/timtitarenko/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/timtitarenko/.m2/repository/org/springframework/spring-core/6.1.3/spring-core-6.1.3.jar:/Users/timtitarenko/.m2/repository/org/springframework/spring-jcl/6.1.3/spring-jcl-6.1.3.jar:/Users/timtitarenko/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-java/4.16.1/selenium-java-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-api/4.16.1/selenium-api-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.16.1/selenium-chrome-driver-4.16.1.jar:/Users/timtitarenko/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.16.1/selenium-chromium-driver-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-json/4.16.1/selenium-json-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.16.1/selenium-manager-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v118/4.16.1/selenium-devtools-v118-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v119/4.16.1/selenium-devtools-v119-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v120/4.16.1/selenium-devtools-v120-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.16.1/selenium-devtools-v85-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.16.1/selenium-edge-driver-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.16.1/selenium-firefox-driver-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-http/4.16.1/selenium-http-4.16.1.jar:/Users/timtitarenko/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.16.1/selenium-ie-driver-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.16.1/selenium-remote-driver-4.16.1.jar:/Users/timtitarenko/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/Users/timtitarenko/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/timtitarenko/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/timtitarenko/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/timtitarenko/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/timtitarenko/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/timtitarenko/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-api/1.33.0/opentelemetry-api-1.33.0.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-context/1.33.0/opentelemetry-context-1.33.0.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.33.0/opentelemetry-exporter-logging-1.33.0.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.33.0/opentelemetry-sdk-common-1.33.0.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.33.0/opentelemetry-sdk-extension-autoconfigure-spi-1.33.0.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.33.0/opentelemetry-sdk-extension-autoconfigure-1.33.0.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.33.0-alpha/opentelemetry-api-events-1.33.0-alpha.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.33.0/opentelemetry-sdk-trace-1.33.0.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.33.0/opentelemetry-sdk-1.33.0.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.33.0/opentelemetry-sdk-metrics-1.33.0.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.33.0-alpha/opentelemetry-extension-incubator-1.33.0-alpha.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.33.0/opentelemetry-sdk-logs-1.33.0.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/timtitarenko/.m2/repository/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-os/4.16.1/selenium-os-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.16.1/selenium-safari-driver-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-support/4.16.1/selenium-support-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/timtitarenko/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/Users/timtitarenko/.m2/repository/org/slf4j/slf4j-api/2.0.11/slf4j-api-2.0.11.jar:/Users/timtitarenko/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/timtitarenko/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/timtitarenko/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.0-M1/spring-boot-starter-test-3.3.0-M1.jar:/Users/timtitarenko/.m2/repository/org/springframework/boot/spring-boot-test/3.3.0-M1/spring-boot-test-3.3.0-M1.jar:/Users/timtitarenko/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.0-M1/spring-boot-test-autoconfigure-3.3.0-M1.jar:/Users/timtitarenko/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/Users/timtitarenko/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/Users/timtitarenko/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/Users/timtitarenko/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/Users/timtitarenko/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/Users/timtitarenko/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/Users/timtitarenko/.m2/repository/org/assertj/assertj-core/3.25.1/assertj-core-3.25.1.jar:/Users/timtitarenko/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/Users/timtitarenko/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/timtitarenko/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/Users/timtitarenko/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/Users/timtitarenko/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/timtitarenko/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/Users/timtitarenko/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/timtitarenko/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/Users/timtitarenko/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/Users/timtitarenko/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/Users/timtitarenko/.m2/repository/org/mockito/mockito-core/5.9.0/mockito-core-5.9.0.jar:/Users/timtitarenko/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.11/byte-buddy-agent-1.14.11.jar:/Users/timtitarenko/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/timtitarenko/.m2/repository/org/mockito/mockito-junit-jupiter/5.9.0/mockito-junit-jupiter-5.9.0.jar:/Users/timtitarenko/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/timtitarenko/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/timtitarenko/.m2/repository/org/springframework/spring-test/6.1.3/spring-test-6.1.3.jar:/Users/timtitarenko/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/Users/timtitarenko/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/Users/timtitarenko/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar:/Users/timtitarenko/.m2/repository/org/apache/logging/log4j/log4j-core/2.20.0/log4j-core-2.20.0.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Europe/Zurich"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CH"/>
+    <property name="sun.boot.library.path" value="/Users/timtitarenko/Library/Java/JavaVirtualMachines/corretto-18.0.2/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/timtitarenko/IdeaProjects/Wootitude-Test/target/surefire/surefirebooter-20240304183141295_3.jar /Users/timtitarenko/IdeaProjects/Wootitude-Test/target/surefire 2024-03-04T18-31-41_253-jvmRun1 surefire-20240304183141295_1tmp surefire_0-20240304183141295_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/timtitarenko/IdeaProjects/Wootitude-Test/target/test-classes:/Users/timtitarenko/IdeaProjects/Wootitude-Test/target/classes:/Users/timtitarenko/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.0-M1/spring-boot-starter-3.3.0-M1.jar:/Users/timtitarenko/.m2/repository/org/springframework/boot/spring-boot/3.3.0-M1/spring-boot-3.3.0-M1.jar:/Users/timtitarenko/.m2/repository/org/springframework/spring-context/6.1.3/spring-context-6.1.3.jar:/Users/timtitarenko/.m2/repository/org/springframework/spring-aop/6.1.3/spring-aop-6.1.3.jar:/Users/timtitarenko/.m2/repository/org/springframework/spring-beans/6.1.3/spring-beans-6.1.3.jar:/Users/timtitarenko/.m2/repository/org/springframework/spring-expression/6.1.3/spring-expression-6.1.3.jar:/Users/timtitarenko/.m2/repository/io/micrometer/micrometer-observation/1.12.2/micrometer-observation-1.12.2.jar:/Users/timtitarenko/.m2/repository/io/micrometer/micrometer-commons/1.12.2/micrometer-commons-1.12.2.jar:/Users/timtitarenko/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.0-M1/spring-boot-autoconfigure-3.3.0-M1.jar:/Users/timtitarenko/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.0-M1/spring-boot-starter-logging-3.3.0-M1.jar:/Users/timtitarenko/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar:/Users/timtitarenko/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar:/Users/timtitarenko/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.22.1/log4j-to-slf4j-2.22.1.jar:/Users/timtitarenko/.m2/repository/org/slf4j/jul-to-slf4j/2.0.11/jul-to-slf4j-2.0.11.jar:/Users/timtitarenko/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/timtitarenko/.m2/repository/org/springframework/spring-core/6.1.3/spring-core-6.1.3.jar:/Users/timtitarenko/.m2/repository/org/springframework/spring-jcl/6.1.3/spring-jcl-6.1.3.jar:/Users/timtitarenko/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-java/4.16.1/selenium-java-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-api/4.16.1/selenium-api-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.16.1/selenium-chrome-driver-4.16.1.jar:/Users/timtitarenko/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.16.1/selenium-chromium-driver-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-json/4.16.1/selenium-json-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.16.1/selenium-manager-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v118/4.16.1/selenium-devtools-v118-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v119/4.16.1/selenium-devtools-v119-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v120/4.16.1/selenium-devtools-v120-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.16.1/selenium-devtools-v85-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.16.1/selenium-edge-driver-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.16.1/selenium-firefox-driver-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-http/4.16.1/selenium-http-4.16.1.jar:/Users/timtitarenko/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.16.1/selenium-ie-driver-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.16.1/selenium-remote-driver-4.16.1.jar:/Users/timtitarenko/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/Users/timtitarenko/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/timtitarenko/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/timtitarenko/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/timtitarenko/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/timtitarenko/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/timtitarenko/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-api/1.33.0/opentelemetry-api-1.33.0.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-context/1.33.0/opentelemetry-context-1.33.0.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.33.0/opentelemetry-exporter-logging-1.33.0.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.33.0/opentelemetry-sdk-common-1.33.0.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.33.0/opentelemetry-sdk-extension-autoconfigure-spi-1.33.0.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.33.0/opentelemetry-sdk-extension-autoconfigure-1.33.0.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.33.0-alpha/opentelemetry-api-events-1.33.0-alpha.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.33.0/opentelemetry-sdk-trace-1.33.0.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.33.0/opentelemetry-sdk-1.33.0.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.33.0/opentelemetry-sdk-metrics-1.33.0.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.33.0-alpha/opentelemetry-extension-incubator-1.33.0-alpha.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.33.0/opentelemetry-sdk-logs-1.33.0.jar:/Users/timtitarenko/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/timtitarenko/.m2/repository/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-os/4.16.1/selenium-os-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.16.1/selenium-safari-driver-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/seleniumhq/selenium/selenium-support/4.16.1/selenium-support-4.16.1.jar:/Users/timtitarenko/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/timtitarenko/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/Users/timtitarenko/.m2/repository/org/slf4j/slf4j-api/2.0.11/slf4j-api-2.0.11.jar:/Users/timtitarenko/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/timtitarenko/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/timtitarenko/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.0-M1/spring-boot-starter-test-3.3.0-M1.jar:/Users/timtitarenko/.m2/repository/org/springframework/boot/spring-boot-test/3.3.0-M1/spring-boot-test-3.3.0-M1.jar:/Users/timtitarenko/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.0-M1/spring-boot-test-autoconfigure-3.3.0-M1.jar:/Users/timtitarenko/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/Users/timtitarenko/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/Users/timtitarenko/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/Users/timtitarenko/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/Users/timtitarenko/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/Users/timtitarenko/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/Users/timtitarenko/.m2/repository/org/assertj/assertj-core/3.25.1/assertj-core-3.25.1.jar:/Users/timtitarenko/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/Users/timtitarenko/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/timtitarenko/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/Users/timtitarenko/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/Users/timtitarenko/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/timtitarenko/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/Users/timtitarenko/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/timtitarenko/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/Users/timtitarenko/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/Users/timtitarenko/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/Users/timtitarenko/.m2/repository/org/mockito/mockito-core/5.9.0/mockito-core-5.9.0.jar:/Users/timtitarenko/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.11/byte-buddy-agent-1.14.11.jar:/Users/timtitarenko/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/timtitarenko/.m2/repository/org/mockito/mockito-junit-jupiter/5.9.0/mockito-junit-jupiter-5.9.0.jar:/Users/timtitarenko/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/timtitarenko/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/timtitarenko/.m2/repository/org/springframework/spring-test/6.1.3/spring-test-6.1.3.jar:/Users/timtitarenko/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/Users/timtitarenko/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/Users/timtitarenko/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar:/Users/timtitarenko/.m2/repository/org/apache/logging/log4j/log4j-core/2.20.0/log4j-core-2.20.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/timtitarenko"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-07-19"/>
+    <property name="java.home" value="/Users/timtitarenko/Library/Java/JavaVirtualMachines/corretto-18.0.2/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/timtitarenko/IdeaProjects/Wootitude-Test"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/timtitarenko/IdeaProjects/Wootitude-Test/target/surefire/surefirebooter-20240304183141295_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="18.0.2+9-FR"/>
+    <property name="user.name" value="timtitarenko"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-18.0.2.9.1"/>
+    <property name="localRepository" value="/Users/timtitarenko/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-18/issues/"/>
+    <property name="java.io.tmpdir" value="/var/folders/b3/kvcnh0r900zctp8ys59v92g80000gn/T/"/>
+    <property name="java.version" value="18.0.2"/>
+    <property name="user.dir" value="/Users/timtitarenko/IdeaProjects/Wootitude-Test"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="6803"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="US-ASCII"/>
+    <property name="java.library.path" value="/Users/timtitarenko/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="18.0.2+9-FR"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="62.0"/>
+  </properties>
+  <testcase name="invalidLength(String)[1]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.637">
+    <system-out><![CDATA[18:31:41.666 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.test.wootitude_test.impl.Validation7CharPageTest]: Validation7CharPageTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:31:41.707 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.test.wootitude_test.WootitudeTestApplication for test class com.test.wootitude_test.impl.Validation7CharPageTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::             (v3.3.0-M1)
+
+2024-03-04T18:31:41.869+01:00  INFO 6803 --- [           main] c.t.w.impl.Validation7CharPageTest       : Starting Validation7CharPageTest using Java 18.0.2 with PID 6803 (started by timtitarenko in /Users/timtitarenko/IdeaProjects/Wootitude-Test)
+2024-03-04T18:31:41.869+01:00  INFO 6803 --- [           main] c.t.w.impl.Validation7CharPageTest       : No active profile set, falling back to 1 default profile: "default"
+2024-03-04T18:31:42.067+01:00  INFO 6803 --- [           main] c.t.w.impl.Validation7CharPageTest       : Started Validation7CharPageTest in 0.315 seconds (process running for 0.729)
+2024-03-04T18:31:43.507+01:00  WARN 6803 --- [           main] o.o.selenium.devtools.CdpVersionFinder   : Unable to find an exact match for CDP version 122, returning the closest version; found: 120; Please update to a Selenium version that supports CDP version 122
+2024-03-04T18:31:44.438+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: 
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidLength(String)[2]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.122">
+    <failure message="&#10;expected: &quot;Invalid Value&quot;&#10; but was: &quot;Valid Value&quot;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+
+expected: "Invalid Value"
+ but was: "Valid Value"
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at com.test.wootitude_test.base.BaseTest.StringAssert(BaseTest.java:19)
+	at com.test.wootitude_test.impl.Validation7CharPageTest.invalidLength(Validation7CharPageTest.java:65)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+    <system-out><![CDATA[2024-03-04T18:31:44.582+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: Aa012345
+Actual: Valid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidLength(String)[3]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.114">
+    <system-out><![CDATA[2024-03-04T18:31:44.700+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: b
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidLength(String)[4]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.087">
+    <system-out><![CDATA[2024-03-04T18:31:44.789+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: 
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="testValidInput(String)[1]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.071">
+    <system-out><![CDATA[2024-03-04T18:31:44.861+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: Aa0*123
+Actual: Valid Value
+Expected: Valid Value
+]]></system-out>
+  </testcase>
+  <testcase name="testValidInput(String)[2]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.069">
+    <system-out><![CDATA[2024-03-04T18:31:44.931+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: BBBBBBB
+Actual: Valid Value
+Expected: Valid Value
+]]></system-out>
+  </testcase>
+  <testcase name="testValidInput(String)[3]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.089">
+    <system-out><![CDATA[2024-03-04T18:31:45.020+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: 1111111
+Actual: Valid Value
+Expected: Valid Value
+]]></system-out>
+  </testcase>
+  <testcase name="testValidInput(String)[4]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.11">
+    <system-out><![CDATA[2024-03-04T18:31:45.132+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: qqqqqqq
+Actual: Valid Value
+Expected: Valid Value
+]]></system-out>
+  </testcase>
+  <testcase name="testValidInput(String)[5]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.094">
+    <system-out><![CDATA[2024-03-04T18:31:45.226+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: *******
+Actual: Valid Value
+Expected: Valid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[1]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.114">
+    <system-out><![CDATA[2024-03-04T18:31:45.342+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: !
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[2]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.074">
+    <system-out><![CDATA[2024-03-04T18:31:45.417+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: #
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[3]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.074">
+    <system-out><![CDATA[2024-03-04T18:31:45.492+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: №
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[4]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.082">
+    <system-out><![CDATA[2024-03-04T18:31:45.574+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: $
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[5]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.087">
+    <system-out><![CDATA[2024-03-04T18:31:45.662+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: ;
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[6]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.077">
+    <system-out><![CDATA[2024-03-04T18:31:45.741+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: %
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[7]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.079">
+    <failure message="&#10;expected: &quot;Invalid Value&quot;&#10; but was: &quot;Valid Value&quot;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+
+expected: "Invalid Value"
+ but was: "Valid Value"
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at com.test.wootitude_test.base.BaseTest.StringAssert(BaseTest.java:19)
+	at com.test.wootitude_test.impl.Validation7CharPageTest.invalidProhibitedSymbols(Validation7CharPageTest.java:56)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+    <system-out><![CDATA[2024-03-04T18:31:45.820+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: :
+Actual: Valid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[8]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.09">
+    <failure message="&#10;expected: &quot;Invalid Value&quot;&#10; but was: &quot;Valid Value&quot;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+
+expected: "Invalid Value"
+ but was: "Valid Value"
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at com.test.wootitude_test.base.BaseTest.StringAssert(BaseTest.java:19)
+	at com.test.wootitude_test.impl.Validation7CharPageTest.invalidProhibitedSymbols(Validation7CharPageTest.java:56)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+    <system-out><![CDATA[2024-03-04T18:31:45.911+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: ^
+Actual: Valid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[9]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.098">
+    <system-out><![CDATA[2024-03-04T18:31:46.010+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: ?
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[10]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.1">
+    <system-out><![CDATA[2024-03-04T18:31:46.110+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: &
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[11]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.088">
+    <failure message="&#10;expected: &quot;Invalid Value&quot;&#10; but was: &quot;Valid Value&quot;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+
+expected: "Invalid Value"
+ but was: "Valid Value"
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at com.test.wootitude_test.base.BaseTest.StringAssert(BaseTest.java:19)
+	at com.test.wootitude_test.impl.Validation7CharPageTest.invalidProhibitedSymbols(Validation7CharPageTest.java:56)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+    <system-out><![CDATA[2024-03-04T18:31:46.198+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: *
+Actual: Valid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[12]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.079">
+    <system-out><![CDATA[2024-03-04T18:31:46.278+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: (
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[13]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.064">
+    <system-out><![CDATA[2024-03-04T18:31:46.342+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: )
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[14]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.065">
+    <system-out><![CDATA[2024-03-04T18:31:46.407+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: +
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[15]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.063">
+    <system-out><![CDATA[2024-03-04T18:31:46.470+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: =
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[16]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.065">
+    <system-out><![CDATA[2024-03-04T18:31:46.535+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: {
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[17]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.064">
+    <system-out><![CDATA[2024-03-04T18:31:46.599+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: }
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[18]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.068">
+    <failure message="&#10;expected: &quot;Invalid Value&quot;&#10; but was: &quot;Valid Value&quot;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+
+expected: "Invalid Value"
+ but was: "Valid Value"
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at com.test.wootitude_test.base.BaseTest.StringAssert(BaseTest.java:19)
+	at com.test.wootitude_test.impl.Validation7CharPageTest.invalidProhibitedSymbols(Validation7CharPageTest.java:56)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+    <system-out><![CDATA[2024-03-04T18:31:46.668+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: [
+Actual: Valid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[19]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.096">
+    <failure message="&#10;expected: &quot;Invalid Value&quot;&#10; but was: &quot;Valid Value&quot;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+
+expected: "Invalid Value"
+ but was: "Valid Value"
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at com.test.wootitude_test.base.BaseTest.StringAssert(BaseTest.java:19)
+	at com.test.wootitude_test.impl.Validation7CharPageTest.invalidProhibitedSymbols(Validation7CharPageTest.java:56)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+    <system-out><![CDATA[2024-03-04T18:31:46.765+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: ]
+Actual: Valid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[20]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.092">
+    <system-out><![CDATA[2024-03-04T18:31:46.859+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: ~
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[21]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.076">
+    <system-out><![CDATA[2024-03-04T18:31:46.935+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: `
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[22]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.07">
+    <failure message="&#10;expected: &quot;Invalid Value&quot;&#10; but was: &quot;Valid Value&quot;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+
+expected: "Invalid Value"
+ but was: "Valid Value"
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at com.test.wootitude_test.base.BaseTest.StringAssert(BaseTest.java:19)
+	at com.test.wootitude_test.impl.Validation7CharPageTest.invalidProhibitedSymbols(Validation7CharPageTest.java:56)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+    <system-out><![CDATA[2024-03-04T18:31:47.005+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: \
+Actual: Valid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[23]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.068">
+    <system-out><![CDATA[2024-03-04T18:31:47.073+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: |
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[24]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.072">
+    <system-out><![CDATA[2024-03-04T18:31:47.145+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: /
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[25]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.067">
+    <system-out><![CDATA[2024-03-04T18:31:47.212+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: ,
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[26]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.087">
+    <system-out><![CDATA[2024-03-04T18:31:47.299+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: <
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidProhibitedSymbols(String)[27]" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.081">
+    <system-out><![CDATA[2024-03-04T18:31:47.380+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: >
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+  <testcase name="invalidCyrillicLetters" classname="com.test.wootitude_test.impl.Validation7CharPageTest" time="0.083">
+    <system-out><![CDATA[2024-03-04T18:31:47.463+01:00  INFO 6803 --- [           main] com.test.wootitude_test.base.BaseTest    : Input value: АБВГДЕЁ
+Actual: Invalid Value
+Expected: Invalid Value
+]]></system-out>
+  </testcase>
+</testsuite>
