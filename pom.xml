@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.test</groupId>
-	<artifactId>wootitude_test</artifactId>
+	<artifactId>1.0,0</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>wootitude_test</name>
 	<description>Test project for Wootitude</description>
